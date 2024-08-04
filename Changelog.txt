@@ -1,0 +1,32 @@
+=================== V 1.3 ===================
+- Added: End-Punkte nach Kapitel-, Bild-, Tebellen-, etc. Nummern entfernt
+- Fix: Überflüssige Klammern im \cite-Beispiel entfernt
+
+=================== V 1.2 ===================
+- delete siunitx cubicCentiMeter
+- siunitx: exponent to prefix = true ?
+
+% Gradient
+\newcommand{\grad}{\mathrm{grad}}
+
+=================== V 1.1 ===================
+- Added: Neuer Befehl \ju für die imaginäre Einheit "j"
+- Added: Neuer Befehl \cphi als Abkürzung für c\Phi (sorgt auch für bessere Einheitlichkeit)
+- Added: mathtools-paket für eigene paired delimiter
+- Added: Neuer Befehl \abs{...} => |...|
+- Added: Neuer Befehl \norm{...} => ||...||
+- Added: Neuer Befehl \Re{...} => Re(...) (Realteil)
+- Added: Neuer Befehl \Im{...} => Im(...) (Imaginärteil)
+- Added: Beschreibung der neuen Befehle
+- Added: ulem-paket für eine robuste nutzung in glossaries: \uline{P}
+- Added: amssymb-paket zur Darstellung der Zahlenmengen
+- Added: float-paket zum erzwingen der Bildpositionen
+- Added: Extra: Beipsiel für zwei gleich hohe Bilder nebeneinander
+- Added: Mehr und bessere Beispiele für glossaries
+
+- Fix: Kapitel des Beispielskapitels je auf neuer Seite
+- Fix: Verbesserung der Befehle \eqdef, \eqexcl, \geqexcl und \leexcl
+- Fix: Rechtschreibfehler in Kapitel 2.4 Abkürzungs- und Formelverzeichnis
+- Fix: Geänderte Paketreihenfolge damit hyperref mit glossaries funktioniert
+
+- No-Fix: Das subfigure-paket ist veraltet wird aber auch nicht benutzt. Wir benutzen das subcaption-paket.

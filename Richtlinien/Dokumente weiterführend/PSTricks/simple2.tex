@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{pstricks}
+\psset{unit=10mm,linewidth=0.4pt,hatchwidth=0.4pt,hatchsep=5pt}
+\begin{document}
+\begin{pspicture}(0,0)(4,6)
+  \psframe[linestyle=none,fillstyle=hlines](0,0)(2,5)
+  \psline(0,0)(0,5)\uput[90](0,5){$-1$}
+  \psline(2,0)(2,5)\uput[90](2,5){$\frac{1}{2}$}
+  \psline(4,0)(4,5)\uput[90](4,5){$\sqrt{2}$}
+  \psline{*-}(0,4)(5,4)
+  \psline{*-}(4,3)(5,3)
+  \psline{-*}(-1,3)(2,3)
+  \psline{*-*}(0,2)(4,2)
+\end{pspicture}
+\end{document}

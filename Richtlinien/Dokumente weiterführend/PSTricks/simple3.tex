@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{pst-node}
+\SpecialCoor
+\parindent=0pt
+\pagestyle{empty}
+\begin{document}
+
+\begin{pspicture}(-1.5,-1.5)(12.5,8.5)%\psgrid[gridcolor=lightgray,gridlabels=0pt]
+  \psaxes{->}(12,8)\uput[-90](12,0){t}\uput[0](0,8){x}
+  \psline[linewidth=1.5pt,linecolor=red]{->}(10,5)\uput[-90]{30}(10,5){$t^\prime$}
+  \psline[linewidth=1.5pt,linecolor=red]{->}(4,8)\uput[-45]{60}(4,8){$x^\prime$}
+  \psline[linewidth=.5pt,linecolor=blue,linestyle=dashed](8,8)
+  \pnode(6,5){P}\psdot(P)\uput[0](P){P}
+  \psline[linestyle=dashed,linewidth=0.5pt](P)(0,0|P)\uput{20pt}[180](0,0|P){$x_P$}
+  \psline[linestyle=dashed,linewidth=0.5pt](P)(P|0,0)\uput{20pt}[-90](P|0,0){$t_P$}
+  \psline[linewidth=1pt,linecolor=blue]{->}(1,0)(P)
+  \psline[linewidth=1pt,linecolor=blue]{->}(P)(11,0)
+  \uput{20pt}[-90](1,0){$t_1$}\uput{20pt}[-90](11,0){$t_2$}
+  \psline[linestyle=dashed,linewidth=0.5pt,linecolor=red](P)(1,2.5)
+  \psline[linestyle=dashed,linewidth=0.5pt,linecolor=red](P)(4.5,2)
+  \uput[-45]{30}(4.5,2.25){$t_P^\prime$}\uput[-45]{30}(2,1){$r\cdot t_1$}
+  \uput[135]{60}(1.4,2.7){$x_P^\prime$}\uput[80]{30}(7.4,3.6){$\frac{1}{r}\cdot t_2$}
+\end{pspicture}
+
+\end{document}

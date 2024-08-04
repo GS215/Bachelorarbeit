@@ -1,0 +1,47 @@
+% Vorlage der Hauptdatei für Studien- und Diplomarbeiten am ETI.
+%--------------------------------------------------------------------
+%
+%   Version: 3.25        (Koma-Skript, documentclass{scrbook})
+%   Datum: 01.06.2018
+%   Autor: Johannes Bier
+%   Vorlagenversion: 1.1
+%
+%--------------------------------------------------------------------
+
+% Konfiguration von TexStudio
+% !TeX spellcheck = de_DE
+% !TeX encoding = utf8
+% !TeX TXS-program:compile = txs:///pdflatex | txs:///makeglossaries
+% !TeX TXS-program:bibliography = txs:///biber
+
+% Konfiguration des Titelblatts
+\input{Vorspann_Dipl.tex}
+
+\input{newcommands.tex}
+
+\begin{document}
+	\frontmatter
+    \begin{spacing}{1}
+    	\include{Titelseite_Name}
+    	\tableofcontents
+    	
+    	\null\newpage
+    	\thispagestyle{empty}
+    	\newpage
+    	\cleardoublepage
+    	\printglossary[type=\acronymtype,style=long,title={Abkürzungsverzeichnis}]
+    	
+    	\null\newpage
+    	\thispagestyle{empty}
+    	\newpage
+    	\cleardoublepage
+    	\printglossary[type=symbolslist,style=long,title={Formelverzeichnis}]
+    \end{spacing}
+
+	\mainmatter
+	\include{Kapitel1}
+	%\include{Kapitel2}
+	
+    \include{Anhang}
+
+\end{document}

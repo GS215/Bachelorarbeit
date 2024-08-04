@@ -1,0 +1,29 @@
+7.1.17 Wie erstelle ich ein Glossar?
+
+Um ein Wortverzeichnis mit Erklärungen oder im weiteren Sinne ein
+Verzeichnis von benutzten Begriffen mit Erklärungen, wie beispielsweise
+von Formelzeichen oder von Abkürzungen, zu erstellen, bietet LaTeX mit
+den Anweisungen \makeglossary und \glossary die Möglichkeit, Einträge
+vorzunehmen. Jedoch verbleibt es beim Autor, diese Einträge zu sortieren
+und zu formatieren.
+Um die Einträge zu sortieren wird meist `makeindex', `xindy' oder
+BibTeX, eventuell ergänzt um ein Zusatzprogramm, verwendet. Zur
+Formatierung und zur leichteren oder differenzierteren Eingabe verwendet
+man ein entsprechendes LaTeX-Paket.
+Das Paket `nomencl' ist entstanden, um Verzeichnisse von Formelzeichen
+anzulegen, kann aber darüberhinaus noch mehr. Datenbanken mit
+Abkürzungen etc. verwaltet das Paket `gloss' mit Hilfe von BibTeX. Das
+Tool `glosstex' erstellt automatisch ein Glossar, ein
+Abkürzungsverzeichnis oder ganz allgemein sortierte Listen. Es
+kombiniert die Funktionalität von `acronym', `nomencl' und `glotex' und
+kann ebenfalls Datenbanken verwalten. Mit dem Paket `makeglos' kann in
+ein Dokument ein Glossar eingebunden werden, das beispielsweise mit
+`makeindex' oder `xindy' erstellt wurde. Dieses Paket ist weniger
+umfangreich als `glosstex'.
+
+nomencl:   CTAN: macros/latex/contrib/nomencl
+gloss:     CTAN: macros/latex/contrib/gloss
+glosstex:  CTAN: support/glosstex/
+acronym:   CTAN: macros/latex/contrib/acronym
+glotex:    CTAN: indexing/glo+idxtex/
+makeglos:  CTAN: macros/latex/contrib/makeglos
